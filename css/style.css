@@ -18,7 +18,7 @@ body {
 	}
 
 	50% {
-		transform: translate(-280px, -280px);
+		transform: translate(-200px, -200px);
 	}
 }
 
@@ -28,7 +28,7 @@ body {
 	}
 
 	50% {
-		transform: translate(280px, -280px);
+		transform: translate(200px, -200px);
 	}
 }
 
@@ -38,7 +38,7 @@ body {
 	}
 
 	50% {
-		transform: translate(-280px, 280px);
+		transform: translate(-200px, 200px);
 	}
 }
 
@@ -48,7 +48,7 @@ body {
 	}
 
 	50% {
-		transform: translate(280px, 280px);
+		transform: translate(200px, 200px);
 	}
 }
 
