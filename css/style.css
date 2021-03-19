@@ -1,0 +1,103 @@
+/*****     GENERAL     ****/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	font-family: sans-serif;
+	background-color: black;
+}
+
+@keyframes topLeft {
+	0%, 25%, 75%, 100% {
+		transform: translate(0px, 0px);
+	}
+
+	50% {
+		transform: translate(-280px, -280px);
+	}
+}
+
+@keyframes topRight{
+	0%, 25%, 75%, 100% {
+		transform: translate(0px, 0px);
+	}
+
+	50% {
+		transform: translate(280px, -280px);
+	}
+}
+
+@keyframes bottomLeft{
+	0%, 25%, 75%, 100% {
+		transform: translate(0px, 0px);
+	}
+
+	50% {
+		transform: translate(-280px, 280px);
+	}
+}
+
+@keyframes bottomRight{
+	0%, 25%, 75%, 100% {
+		transform: translate(0px, 0px);
+	}
+
+	50% {
+		transform: translate(280px, 280px);
+	}
+}
+
+.main-container{
+	max-width: 1000px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.main-container h2{
+	color: white;
+	margin-bottom: 20px;
+}
+
+.grid-container{
+	width: 100%;
+	height: 800px;
+	display: grid;
+	grid-template-columns: auto auto;
+	border: 2px solid chocolate;
+}
+
+.grid{
+	position: relative;
+}
+
+.grid1 img{
+	right: 0;
+	bottom: 0;
+	animation-name: topLeft;
+}
+.grid2 img{
+	left: 0;
+	bottom: 0;
+	animation-name: topRight;
+}
+.grid3 img{
+	right: 0;
+	top: 0;
+	animation-name: bottomLeft;
+}
+.grid4 img{
+	left: 0;
+	top: 0;
+	animation-name: bottomRight;
+}
+
+.grid img{
+	position: absolute;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
